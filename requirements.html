@@ -1,0 +1,285 @@
+<html lan="en">
+  <head>
+    <title>
+      NeveLate! - Requirements
+    </title>
+	
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
+	</head>
+	
+	<body>
+        
+        <!-- Fixed navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+      		<div class="container">
+        		<div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="">NeverLate</a>
+        </div>
+        		<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+	            		<li><a href="/Users/riccardomereu/Documents/git/prova/prova/index.html">Home</a></li>
+						<li><a href="/Users/riccardomereu/Documents/git/prova/prova/index.html#news">News</a></li>
+        	    		<li><a href="/Users/riccardomereu/Documents/git/prova/prova/index.html#contacts">Contacts</a></li>
+            			<li class="dropdown">
+    						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Learn More<span class="caret"></span></a>
+    						<ul class="dropdown-menu" role="menu">
+    							<li><a href="/Users/riccardomereu/Documents/git/prova/prova/vision.html">Our Vision</a></li>
+    							<li role="presentation" class="divider"></li>
+    							<li><a href="/Users/riccardomereu/Documents/git/prova/prova/requirements.html">Requirements</a></li>
+    						</ul>
+						</li>
+            		</ul>
+					<ul class="nav navbar-nav navbar-right">
+        		<li><a href="#">Log In</a></li>
+        		<li><a href="#"><mark>Register New Product</mark></a></li>
+			</ul>
+        		</div>
+      		</div>
+   		</nav> 
+   		<br>
+   		<br>
+   		<br>
+   		
+   		<!-- Fonctional & Non-Fonctional Requirements -->
+		<blockquote>
+			<div class="row">
+				<div class="col-md-6">
+					<h1 id="news" class="page-header">Functional Requirements</h1>
+				</div>
+				<div class="col-md-6">
+					<h1 id="news" class="page-header">Non-Functional Requirements</h1>
+				</div>
+			</div>
+			<table class="table">
+				<caption class="text-center">Highest priority is 1</caption>
+			</table>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<table class="table">
+						<thead>
+							<tr>
+								<th class="text-center">Functional Areas</th>
+								<th class="text-center">Requirements</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							<tr>
+								<td>Basic Functions</td>
+								<td>
+									<ul>
+										<li>
+											Travel time evaluation<br>
+											The system must be able to evaluate the travel time between different areas of the Politecnico campus by assuming the user will choose the shortest path.<br>
+											<strong>Priority 1</strong>
+										</li>
+										<li>
+											On time notification<br>
+											The system must notify the user on time when he has to head out for his next lecture, according to travel time estimation and his timetable.<br>
+											<strong>Priority 1</strong>										
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>Interactions with the user main interface</td>
+								<td>
+									<ul>
+										<li>
+											Smartwatch notification<br>
+											The user must be notified with a text message on the screen, telling also where he have to go. <br>
+											<strong>Priority 1</strong>
+										</li>
+										<li>
+											“Tap” function<br>
+											Possibility for the user to “Tap” the screen to know how much time is left before the next notification will arrive (and therefore how much time is left before he has to go to the classroom).<br>
+											<strong>Priority 2</strong>										
+										</li>
+										<li>
+											”Double tap” Function<br>
+											After the action described in FR 2.2, the user can disable the next notification by double tapping the screen.<br>
+											<strong>Priority 4</strong>
+										</li>
+										<li>
+											“Do not disturb” mode<br>
+											The smartwatch would give the possibility to the student to disable all the notification as long as this mode is activated.<br>
+											<strong>Priority 5</strong>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>Features of the user’s settings interface</td>
+								<td>
+									<ul>
+										<li>
+											Calendar Customization<br>
+											Possibility for the user to add/remove classes from a digital calendar. Particular attention has to be paid in the “classroom” field, which has to be chosen from a list of fixed places.<br>
+											<strong>Priority 1</strong>
+										</li>
+										<li>
+											Notification time preferences<br>
+											Possibility for the users to customize how early he wants to arrive in the classroom. The system will adapt notification time according to this preference.<br>
+											<strong>Priority 3</strong>										
+										</li>
+										<li>
+											Notification style preferences<br>
+											Possibility for the user to specify if he wants to add vibration and/or audio to his notification style.<br>
+											<strong>Priority 4</strong>
+										</li>
+										<li>
+											Automatic upload of the calendar<br>
+											The system would be able to upload the user schedule automatically using the digital calendar present on the “Portale della didattica”<br>
+											<strong>Priority 5</strong>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>Additional features for teachers</td>
+								<td>
+									<ul>
+										<li>
+											Additional features for teachers<br>
+											Possibility for the teacher to ping his students via the main interface. Ping gives the possibility to the teacher to specify that the lesson will start in X minutes. The notification system for the students would change accordingly.<br>
+											<strong>Priority 2</strong>
+										</li>
+										<li>
+											Schedule update notification<br>
+											If the professor, in the settings interface, delete or update one calendar entry already existent, the system would notify the students that had the same entry in their calendar.<br>
+											<strong>Priority 3</strong>										
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+						
+					</table>
+				</div>
+				<div class="col-md-6">
+					<br>
+					<table class="table">
+						<thead>
+							<tr>
+								<th class="text-center">Area</th>
+								<th class="text-center">Non-Functional Requirements</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							<tr>
+								<td>Portability</td>
+								<td>
+									User interface<br>
+									The system needs to be compatible with Pebble smartwatch. In particular the system must be able to send notification to Pebble and should react to touch-screen user inputs.
+								</td>
+							</tr>
+							<tr>
+								<td>Portability</td>
+								<td>
+									Mobile support<br>
+									The system must rely on a smartphone running Android OS to provide connection between the user, the environment and the central intelligence.
+								</td>
+							</tr>
+							<tr>
+								<td>Portability</td>
+								<td>
+									User settings interface<br>
+									The website with the user settings interface must be acceptably viewable from any general purpose browser (also for mobile devices). The system will be developed to optimally work with all the most popular current generation browsers (Google Chrome, Mozilla Firefox, Safari, Internet Explorer)
+								</td>
+							</tr>
+							<tr>
+								<td>Efficiency and usability</td>
+								<td>
+									User settings interface<br>
+									The maximum acceptable delay for automatic notifications, due to elaboration time, is 1 minute compared to the computed notification time. Average delay time should not be higher than 30 seconds.
+								</td>
+							</tr>
+							<tr>
+								<td>Portability</td>
+								<td>
+									Response time to direct user inputs<br>
+									The system must rely on a smartphone running Android OS to provide connection between the user, the environment and the central intelligence.
+								</td>
+							</tr>
+							<tr>
+								<td>Efficiency</td>
+								<td>
+									Localization accuracy<br>
+									The system must be able to recognize the proximity of the user to a specific area of the campus. Areas of the campus must be dimensioned so that the time to cross them is less than 1 minute walk. The maximum acceptable positioning error is that the user is localized in an area adjacent to the one the the user is in. The system should avoid to erroneously localize a student in a wrong floor.
+								</td>
+							</tr>
+							<tr>
+								<td>Efficiency</td>
+								<td>
+									Time travel estimation<br>
+									The system must estimate the travel time between areas with a maximum error of 1 minutes.
+								</td>
+							</tr>
+							<tr>
+								<td>Efficiency</td>
+								<td>
+									Localization attempts frequency<br>
+									Unless the function is not directly called by the user or by a professor ping (see FR 2.2 or FR 4.1), the system will update the position of the user (and so the estimated travel time) every 1 minute starting from 30 minutes before the next lecture.
+								</td>
+							</tr>
+							<tr>
+								<td>Interoperability</td>
+								<td>
+									Calendar support<br>
+									The system has to be compatible with Google Calendar.
+								</td>
+							</tr>
+							<tr>
+								<td>Usability</td>
+								<td>
+									Languages<br>
+									Menus and all user interfaces will be available in english.
+								</td>
+							</tr>
+							<tr>
+								<td>Reliability</td>
+								<td>
+									Localization and time travel estimation malfunctioning<br>
+									If the user cannot be localized, or his travel time cannot be estimate, the watch assumes by default 15 minutes time travel for the destination until the system doesn’t start to run properly again.
+								</td>
+							</tr>
+							<tr>
+								<td>Reliability</td>
+								<td>
+									Network malfunctioning<br>
+									If for some reasons there is no internet connection on the user interface, the system will signal it. If there is a local calendar accessible on the device (google calendar app) the system will still send notification using the default value.
+								</td>
+							</tr>
+						</tbody>
+						
+					</table>
+				</div>
+			</div>
+			
+		</blockquote>
+		
+		<!-- Actors -->
+		<blockquote>
+			<h1 id="news" class="page-header">Actors</h1>
+		</blockquote>
+	</body>
+</html>
+
+
