@@ -1,60 +1,178 @@
-<html>
+<html lan="en">
   <head>
     <title>
       NeveLate!
     </title>
-    
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    
-  </head>
-  <body>
-            <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
+	
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
+	</head>
+	
+	<body>
+        
+        <!-- Fixed navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+      		<div class="container">
+        		<div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">NeverLate</a>
+          <a class="navbar-brand" href="">NeverLate</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <!-- menù a tendina
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-            -->
-          </ul>
-        </div>
-      </div>
-    </nav> <!-- finisce la barra di navigazione -->
-    
-    <div class="jumbotron">
-      <div class="container">
-        <h1>  Tired of being always late for your lessons?</h1>
-        <p>Nevermind! NeverLate has the right solution for you. NeverLate is a simple and versatile wrist-watch that notifies if you are late, so that you’ll never miss a lecture! Look on our web page to have more informations!</p>
-      </div>
-    </div>
-    
-  </body>
+        		<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+	            		<li><a href="/index.html">Home</a></li>
+						<li><a href="/index.html#news">News</a></li>
+        	    		<li><a href="/index.html#contacts">Contacts</a></li>
+            			<li class="dropdown">
+    						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Learn More<span class="caret"></span></a>
+    						<ul class="dropdown-menu" role="menu">
+    							<li><a href="/vision.html">Our Vision</a></li>
+    							<li role="presentation" class="divider"></li>
+    							<li><a href="/requirements.html">Requirements</a></li>
+    						</ul>
+						</li>
+            		</ul>
+					<ul class="nav navbar-nav navbar-right">
+        		<li><a href="#">Log In</a></li>
+        		<li><a href="#"><mark>Register New Product</mark></a></li>
+			</ul>
+        		</div>
+      		</div>
+   		</nav> 
+    	
+    	<!-- Tired of being late? -->
+    	<div class="jumbotron">
+			<div class="container">
+        		<h1>  Tired of being always late?</h1>
+        		<p>Nevermind! NeverLate has the right solution for you. NeverLate is a simple and versatile wrist-watch that notifies if you are late, so that you'll never miss a lecture! Look on our web page to have more informations!</p>
+			</div>
+    	</div>
+    	
+		<!-- The project -->
+    	<blockquote>
+    		<div class="container-fluid">
+	    		<div class="media">
+  					<div class="media-left media-top">
+      					<img class="media-object" src="/immagini/logo.png" alt="Responsive image">
+	  				</div>
+  					<div class="media-body">
+    					<div class="panel panel-default">
+  							<div class="panel-heading">
+    							<h3 class="panel-title" style="font-size:30px">The Project</h3>
+  							</div>
+  							<div class="panel-body">
+  								<font face="WildWest" size="4">
+ 	   								<p>NeverLate is a smartwatch that, as a main feature, has to notify the user when he has to head out to his next lesson.</p>
+    								<p>The system will calculate the right time for the notifications according to:</p>
+    								<ul>
+    									<li>user position inside the campus</li>
+	    								<li>user lecture schedule (time and place)</li>
+    									<li>estimated time to reach the destination, obtained by collecting and processing data from all the user of NeverLate</li>
+    									<li>professor notification during breaks or schedule updates (see later on to know what the system is able to do from the professor side)</li> 
+    									<li>personal user settings</li>
+	    							</ul>
+	    							<p>Furthermore, if the user wants to know how much time he has left before he has to move, he can tap the smartwatch screen to show this information. He can also disable next notification with another double tap.Extended interface to set up and/or customize the service will be provided as a simple website.</p>
+									<p>Additional tools are available in a "professor" version of NeverLate. The professor will be also able to "ping" his students when he's planning to start the lecture (now, in 5 minutes... ) just with the smartwatch. Moreover, in the extended interface, he can also modify temporarily his lecture schedule and the system will automatically adapt students notifications according to it.</p>    					
+	    						</font>
+  							</div>
+						</div>
+	  				</div>
+				</div>
+			</div>
+		</blockquote>
+		
+		<!-- Fork us button -->
+		<div class="row">
+			<div class="col-md-5"></div>
+			<div class="col-md-2">
+				<a href="https://github.com/AmI-2015/NeverLate" class="btn btn-default btn-lg" role="button">Fork Us on GitHub</a>
+			</div>
+			<div class="col-md-5"></div>
+		</div>
+		
+		<!-- News -->
+		<blockquote>
+			<h1 id="news" class="page-header">News</h1>
+			<div class="well well-lg">
+				<marquee
+  					loop="-1"
+			    	scrollamount="1"
+  					scrolldelay="20"
+  					direction="up"
+  					align="center">
+
+					20/04 We are scanning Mac-Address around the Politecnico in order to define our checkpoints<br><br>
+					20/04 We have decided to handle signals on a linear scale instead of a logarithmic one<br><br>
+					13/04 Fede is trying to implement an online database for nico and lore's scripts<br><br>
+					9/04 We are discussing about implement system like Google Calendar in our project and many different implementations if the internet connection goes offline<br><br>
+					9/04 Nico is writing a script able to learn all the mac address of the campus<br><br>
+					9/04 Lore is improving his script to take average misurement of single places<br><br>
+
+				</marquee>
+			</div>
+		</blockquote>
+		
+		<!-- Progress Bar -->
+		<blockquote>
+			<h1 id="news" class="page-header">Progress Bar</h1>
+			<div class="well well-lg">
+				<p>Our project is not complete this is our progress bar:</p>
+				<div class="progress">
+					<!-- il parametro che determina la lunghezza della barra completata è style="width: <valore>%" qui sotto! -->
+  					<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+    					<span class="sr-only">40% Complete</span>
+  					</div>
+				</div>
+			</div>
+		</blockquote>
+		
+		<!-- Contact Us -->
+		<blockquote>
+			<h1 id="contacts" class="page-header">Contact Us</h1>
+			<div class="row">
+  				<div class="col-md-3">
+  					<adress>
+  						<strong>Riccardo Mereu</strong><br>
+  						mail:<a href="mailto:riccardo.mereu@studenti.polito.it">riccardo.mereu@studenti.polito.it</a><br>
+  						github:<a href="https://github.com/SuMereMereu">SuMereMereu</a><br>
+  					</adress>
+  				</div>
+  			
+  				<div class="col-md-3">
+  					<adress>
+  						<strong>Nicola Prette</strong><br>
+  						mail:<a href="mailto:nicola.prette@studenti.polito.it">nicola.prette@studenti.polito.it</a><br>
+  						github:<a href="https://github.com/GrizzlyMan">GrizzlyMan</a><br>
+  					</adress>
+  				</div>
+  				<div class="col-md-3">
+  					<adress>
+  						<strong>Federico Barusso</strong><br>
+  						mail:<a href="mailto:federico.barusso@studenti.polito.it">federico.barusso@studenti.polito.it</a><br>
+  						github:<a href="https://github.com/FEDE9326">FEDE9326</a><br>
+  					</adress>
+  				</div>
+  				<div class="col-md-3">
+  					<adress>
+  						<strong>Lorenzo Miretti</strong><br>
+  						mail:<a href="mailto:lorenzo.miretti@studenti.polito.it">lorenzo.miretti@studenti.polito.it</a><br>
+  						github:<a href="https://github.com/Firebird1993">Firebird1993</a><br>
+  					</adress>
+  				</div>
+			</div>
+		</blockquote>
+
+	</body>
 </html>
