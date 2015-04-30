@@ -14,3 +14,11 @@
 .navbar-custom .navbar-brand {
     color:#eeeeee;
 }
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #5bc0de;
+  border-radius: 1px;
+}
