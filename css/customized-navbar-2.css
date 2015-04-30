@@ -1,6 +1,6 @@
 /* navbar */
 .navbar-custom {
-    background-color: #428bca;
+    background-color: darken(#428bca, 6.5%);
     border-color: #428bca;
 }
 /* title */
