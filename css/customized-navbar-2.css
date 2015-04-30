@@ -1,7 +1,7 @@
 /* navbar */
 .navbar-custom {
-    background-color: #5cb85c;
-    border-color: #5cb85c;
+    background-color: #428bca;
+    border-color: #428bca;
 }
 /* title */
 .navbar-custom .navbar-brand {
@@ -23,7 +23,7 @@
 .navbar-custom .navbar-nav > .active > a:hover, 
 .navbar-custom .navbar-nav > .active > a:focus {
     color: #555;
-    background-color: #E7E7E7;
+    background-color: #5bc0de;
 }
 .navbar-custom .navbar-nav > .open > a, 
 .navbar-custom .navbar-nav > .open > a:hover, 
