@@ -5,10 +5,10 @@
 }
 
 .navbar-custom .navbar-nav > li > a {
-    color:#fff;
+    color:#5bc0de;
 }
 .navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color: #5bc0de;
+    color: #ffffff;
     background-color:transparent;
 }
 .navbar-custom .navbar-brand {
