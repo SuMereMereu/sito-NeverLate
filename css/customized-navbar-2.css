@@ -5,11 +5,11 @@
 }
 /* title */
 .navbar-custom .navbar-brand {
-    color: #777;
+    color: #eee;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus {
-    color: #E7E7E7;
+    color: #5E5E5E;
 }
 /* link */
 .navbar-custom .navbar-nav > li > a {
