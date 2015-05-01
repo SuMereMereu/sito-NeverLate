@@ -60,10 +60,10 @@
 }
 @media (max-width: 767px) {
     .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
-        color: #777;
+        color: #eee; /*precendente #777 */
     }
     .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #eee; /*precedente = #333 */
+        color: #333; 
     }
 }
