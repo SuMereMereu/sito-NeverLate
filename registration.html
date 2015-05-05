@@ -85,7 +85,7 @@
         						<h2 class="form-signin-heading">Password</h2>
 							<label for="inputPassword" class="sr-only">Password</label>
         						<input type="password" id="inputPassword" class="form-control" placeholder="Enter Password" required>
-        						<input type="password" id="inputPasswordRepeated" class="form-control" placeholder="Repeat Password" required>
+        						<input type="password" class="form-control" id="inputPasswordRepeated" placeholder="Repeat Password" required>
       						</div>
       					</form>
         			</div>
@@ -100,6 +100,39 @@
     		</div>
     		
     		<script>
+    			$(document).ready(function()
+    			{
+    				mail = $('#inputEmail').val();
+    				psw = $('#inputPassword').val();
+    				
+    				$('#inputEmailRepeated').keyup(function()
+    				{
+    					rep_email = $('#inputEmailRepeated').val();
+    					
+    					if(mail == rep_email)
+    					{
+    						$('#EmailID').addClass("has-success");
+    					}
+    					else
+    					{
+    						$('#EmailID').addClass("has-error");
+    					}
+    				})
+    				
+    				$('#inputPasswordRepeated').keyup(function()
+    				{
+    					rep_email = $('#inputPasswordRepeated').val();
+    					
+    					if(mail == rep_email)
+    					{
+    						$('#PasswordID').addClass("has-success");
+    					}
+    					else
+    					{
+    						$('#PasswordID').addClass("has-error");
+    					}
+    				})
+    			})
     			
     		</script>
     	</body>
