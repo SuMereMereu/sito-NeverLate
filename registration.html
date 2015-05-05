@@ -102,38 +102,53 @@
     		<script>
     			$(document).ready(function()
     			{
-    				mail = $('#inputEmail').val();
-    				psw = $('#inputPassword').val();
-    				
     				$('#inputEmailRepeated').keyup(function()
     				{
+    					mail = $('#inputEmail').val();
     					rep_email = $('#inputEmailRepeated').val();
     					
-    					if(mail == rep_email)
+    					if(rep_email == "")
     					{
-    						$('#EmailID').removeClass();
-    						$('#EmailID').addClass("has-success");
+    						$('#EmailID').addClass("form-group");
     					}
+    					
     					else
     					{
-    						$('#EmailID').removeClass();
-    						$('#EmailID').addClass("has-error");
+    						if(mail == rep_email)
+    						{
+    							$('#EmailID').removeClass();
+    							$('#EmailID').addClass("form-group has-success");
+    						}
+    						else
+    						{
+    							$('#EmailID').removeClass();
+    							$('#EmailID').addClass("form-group has-error");
+    						}
     					}
     				})
     				
     				$('#inputPasswordRepeated').keyup(function()
     				{
-    					rep_email = $('#inputPasswordRepeated').val();
+    					psw = $('#inputPassword').val();
+    					rep_psw = $('#inputPasswordRepeated').val();
     					
-    					if(mail == rep_email)
+    					if(rep_psw == "")
     					{
-    						$('#PasswordID').removeClass();
-    						$('#PasswordID').addClass("has-success");
+    						$('#PasswordID').addClass("form-group");
     					}
+    					
     					else
     					{
-    						$('#PasswordID').removeClass();
-    						$('#PasswordID').addClass("has-error");
+    						if(ps == rep_psw)
+    						{
+    							$('#PasswordID').removeClass();
+    							$('#PasswordID').addClass("form-group has-success");
+    						}
+    						else
+    						{
+    							$('#PasswordID').removeClass();
+    							$('#PasswordID').addClass("form-group has-error");
+    						}
     					}
     				})
     			})
