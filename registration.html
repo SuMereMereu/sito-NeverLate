@@ -107,9 +107,10 @@
     					mail = $('#inputEmail').val();
     					rep_email = $('#inputEmailRepeated').val();
     					
+    					$('#EmailID').removeClass();
+    					
     					if(rep_email == "")
     					{
-    						$('#EmailID').removeClass();
     						$('#EmailID').addClass("form-group");
     					}
     					
@@ -117,12 +118,10 @@
     					{
     						if(mail == rep_email)
     						{
-    							$('#EmailID').removeClass();
     							$('#EmailID').addClass("form-group has-success");
     						}
     						else
     						{
-    							$('#EmailID').removeClass();
     							$('#EmailID').addClass("form-group has-error");
     						}
     					}
@@ -133,9 +132,10 @@
     					psw = $('#inputPassword').val();
     					rep_psw = $('#inputPasswordRepeated').val();
     					
+    					$('#PasswordID').removeClass();
+    					
     					if(rep_psw == "")
     					{
-    						$('#PasswordID').removeClass();
     						$('#PasswordID').addClass("form-group");
     					}
     					
@@ -143,12 +143,10 @@
     					{
     						if(psw == rep_psw)
     						{
-    							$('#PasswordID').removeClass();
     							$('#PasswordID').addClass("form-group has-success");
     						}
     						else
     						{
-    							$('#PasswordID').removeClass();
     							$('#PasswordID').addClass("form-group has-error");
     						}
     					}
