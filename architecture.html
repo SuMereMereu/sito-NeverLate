@@ -10,11 +10,11 @@
 	
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 		
-		<link href="static/css/customized-navbar-2.css" rel="stylesheet">
+		<link href="css/customized-navbar-2.css" rel="stylesheet">
 		
-		<link href="static/css/carousel.css" rel="stylesheet">
+		<link href="css/carousel.css" rel="stylesheet">
 		
-		<script src="static/javascript/carousel1.js"></script>
+		<script src="javascript/carousel1.js"></script>
 	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	
@@ -37,23 +37,23 @@
         			</div>
         			<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-	            				<li><a href=" {{ url_for('index') }} ">Home</a></li>
-						<li><a href="{{ url_for('index') }}#news">News</a></li>
-        	    				<li><a href="{{ url_for('index') }}#contacts">Contacts</a></li>
+	            				<li><a href="index.html">Home</a></li>
+						<li><a href="index.html#news">News</a></li>
+        	    				<li><a href="index.html#contacts">Contacts</a></li>
             					<li class="dropdown">
     							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Learn More<span class="caret"></span></a>
     							<ul class="dropdown-menu" role="menu">
-    								<li><a href="{{ url_for('vision') }}">Our Vision</a></li>
+    								<li><a href="vision.html">Our Vision</a></li>
     								<li role="presentation" class="divider"></li>
-    								<li><a href="{{ url_for('requirements') }}">Requirements</a></li>
+    								<li><a href="requirements.html">Requirements</a></li>
     								<li role="presentation" class="divider"></li>
     								<li><a href="#">Architecture</a></li>
     							</ul>
 						</li>
             				</ul>
 					<ul class="nav navbar-nav navbar-right">
-        					<li><a href="{{ url_for('login') }}">Log In</a></li>
-        					<li><a href="{{ url_for('registration') }}" class="btn btn-primary" id="menu-toggle">Register New product</a></li>
+        					<li><a href="#">Log In</a></li>
+        					<li><a href="registration.html" class="btn btn-primary btn-xs">Register New Product</a></li>
 					</ul>
         			</div>
       			</div>
