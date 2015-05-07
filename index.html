@@ -11,6 +11,10 @@
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 		
 		<link href="css/customized-navbar-2.css" rel="stylesheet">
+		
+		<link href="css/carousel.css" rel="stylesheet">
+		
+		<script src="javascript/carousel1.js"></script>
 	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	
@@ -56,13 +60,43 @@
       			</div>
    		</nav> 
     	
-    		<!-- Tired of being late? -->
-    		<div class="jumbotron">
-			<div class="container">
-        			<h1 class="text-center">  Tired of being always late?</h1>
-        			<p class="text-center">Nevermind! NeverLate has the right solution for you. NeverLate is a simple and versatile wrist-watch that notifies if you are late, so that you'll never miss a lecture! Look on our web page to have more informations!</p>
-			</div>
-    		</div>
+    		<!-- Carousel ================================================== -->
+    		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+      		
+      			<!-- Indicators -->
+      			<ol class="carousel-indicators">
+        			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        			<li data-target="#myCarousel" data-slide-to="1"></li>
+      			</ol>
+      			<div class="carousel-inner" role="listbox">
+        			<div class="item active">
+          				<div class="container">
+            					<div class="carousel-caption">
+              						<h1>Welcome!</h1>
+              						<p>This is NeverLate architecture page,</p>
+              						<p>here you can find more details about some technical stuff about our project.</p>
+            					</div>
+          				</div>
+        			</div>
+        			<div class="item">
+          				<div class="container">
+            					<div class="carousel-caption">
+              						<h1>For Example:</h1>
+              						<p>We show with which languages, tools and how we are going to help you.</p>
+            					</div>
+          				</div>
+        			</div>
+      			</div>
+      			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        			<span class="sr-only">Previous</span>
+      			</a>
+      			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        			<span class="sr-only">Next</span>
+      			</a>
+	 	</div>
+	 	<!-- /.carousel -->
     	
 		<!-- The project no xs -->
     		<blockquote class="hidden-xs">
